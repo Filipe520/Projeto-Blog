@@ -1,0 +1,5 @@
+@media screen and (max-width: 600px){
+    fieldset {
+        width: clamp(90vw, 7vw, 6rem)
+    }
+}

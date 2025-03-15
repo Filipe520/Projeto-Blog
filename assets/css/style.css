@@ -1,0 +1,161 @@
+/* Google Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+
+:root {
+    /* White */
+    --cor_white_01: rgb(238, 238, 238);
+    
+    /* Black */
+    
+    --cor_black_01: rgb(26, 26, 26);
+    --cor_black_02: rgb(39, 39, 39);
+    --cor_black_03: rgba(182, 182, 182, 0.048);
+    --cor_black_04: rgb(134, 134, 134);
+    
+    /* Purple */
+
+    --cor_peple_01: #F2387C;
+    --cor_peple_02: #F23064;
+
+    /* Yellow */
+    --cor_yellow_03: #F2ECCE
+
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--cor_black_01);
+    color: var(--cor_white_01);
+
+}
+
+main {
+    max-width: 1300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+
+    padding: 10px;
+}
+
+h1 {
+    margin: 30px;
+
+    color: var(--cor_yellow_03)
+}
+
+fieldset {
+    width: 500px;
+
+    padding: 10px;
+    margin-bottom: 50px;
+
+    border-radius: 10px;
+    
+    background-color: var(--cor_black_02);
+
+    transition: .5s all ease;
+
+    box-shadow: 7px 8px 10px -6px rgba(255, 255, 255, 0.315);
+}
+
+.btnField {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnField button {
+    padding: 10px;
+
+    border-radius: 5px;
+    border: 1px solid var(--cor_peple_01);
+
+    color: var(--cor_peple_02);
+    background-color: var(--cor_black_03);
+}
+
+.btnField button:hover {
+    border: 1px solid var(--cor_peple_01);
+    opacity: .8;
+}
+
+.btnField button:focus {
+    opacity: .5;
+}
+
+fieldset legend {
+    padding: 0 10px;
+    color: var(--cor_peple_01)
+}
+
+fieldset input, textarea {
+    width: 100%;
+    
+    margin: 5px;
+
+    border-radius: 5px;
+    border: 1px solid rgb(119, 119, 119);
+    
+    padding: 10px;
+    
+    background-color: transparent;
+    color: white;
+    
+    transition: all ease-out .3s;
+}
+
+fieldset input:hover, textarea:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.res {
+    color: var(--cor_yellow_03)
+}
+
+.res strong {
+    color: rgb(184, 57, 57);
+    text-decoration: underline;
+}
+
+.postArticle {
+    margin: 50px 0;
+
+    font-variant: small-caps;
+}
+
+.titleH2 {
+    color: var(--cor_black_04);
+    font-size: 2em;
+}
+
+.postP {
+    font-size: 1.2em;
+}
+
+.postHR {
+    border: 1px solid rgb(201, 201, 201);
+}
