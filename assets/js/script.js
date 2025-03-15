@@ -52,7 +52,7 @@ fetch('https://jsonplaceholder.typicode.com/posts').then((response) => {
 
     let h2 = document.createElement('h2')
     h2.className = 'res'
-    h2.innerHTML = `Total de <strong>${qtdAPI} API</strong>`
+    h2.innerHTML = `Total de <strong>${qtdAPI} REQUISIÇÃO</strong>`
 
     posts.insertAdjacentElement("afterbegin", h2)
     for (let i in json) {
